@@ -19,7 +19,6 @@ const zip = (options: VitePluginZip = { }): Plugin => {
     apply: 'build',
     enforce: 'post',
     configResolved(resolvedConfig) {
-      console.log('---', resolvedConfig)
       config = resolvedConfig
       outputPath = path.isAbsolute(config.build.outDir)
         ? config.build.outDir
