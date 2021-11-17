@@ -1,0 +1,41 @@
+{
+  "name": "vite-plugin-zip",
+  "version": "1.0.0",
+  "description": "zip files",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.js",
+  "author": "liufei",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup src/index.ts --dts --format cjs,esm"
+  },
+
+  "keywords": [
+    "vite",
+    "zip",
+    "vite-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liufeifeiholy/vite-plugin-zip"
+  },
+  "bugs": {
+    "url": "https://github.com/liufeifeiholy/vite-plugin-zip/issues"
+  },
+  "homepage": "https://github.com/liufeifeiholy/vite-plugin-zip/tree/master/#readme",
+  "dependencies": {
+    "yazl": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/yazl": "^2.4.2",
+    "tsup": "^5.7.1",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.14"
+  }
+}
